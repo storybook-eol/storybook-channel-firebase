@@ -43,7 +43,7 @@ var FirebaseTransport = exports.FirebaseTransport = function () {
     _classCallCheck(this, FirebaseTransport);
 
     this._handler = null;
-    this._ref = this._createRef();
+    this._ref = this._createRef(url);
     this._ref.on('value', after(1, function (s) {
       return _this._handler(s.val());
     }));

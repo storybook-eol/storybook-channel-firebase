@@ -11,7 +11,7 @@ export default function createChannel({ url }) {
 export class FirebaseTransport {
   constructor({ url }) {
     this._handler = null;
-    this._ref = this._createRef();
+    this._ref = this._createRef(url);
     this._ref.on('value', after(1, s => this._handler(s.val())));
   }
 
