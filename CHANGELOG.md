@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.0.2
+
+* Fix url is undefined bug
+
 ### v1.0.1
 
 * Add missing imports ('firebase' variable was undefined)
