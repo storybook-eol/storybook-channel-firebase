@@ -1,5 +1,7 @@
 import parse from 'url-parse';
 import Channel from '@kadira/storybook-channel';
+import firebase from 'firebase/app';
+import 'firebase/database';
 
 export default function createChannel({ url }) {
   const transport = new FirebaseTransport({ url });

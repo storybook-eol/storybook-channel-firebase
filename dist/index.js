@@ -17,6 +17,12 @@ var _storybookChannel = require('@kadira/storybook-channel');
 
 var _storybookChannel2 = _interopRequireDefault(_storybookChannel);
 
+var _app = require('firebase/app');
+
+var _app2 = _interopRequireDefault(_app);
+
+require('firebase/database');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -63,7 +69,7 @@ var FirebaseTransport = exports.FirebaseTransport = function () {
 
       var config = { databaseURL: protocol + '//' + host };
       var id = Math.random().toString(16).slice(2);
-      var app = firebase.initializeApp(config, id);
+      var app = _app2.default.initializeApp(config, id);
       return app.database().ref(pathname);
     }
   }]);
