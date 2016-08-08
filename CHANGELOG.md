@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.0.3
+
+* Public release
+
 ### v1.0.2
 
 * Fix url is undefined bug
