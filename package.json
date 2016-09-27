@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@kadira/storybook-channel": "^1.0.1",
-    "firebase": "^3.2.1",
+    "firebase": "^3.4.1",
     "url-parse": "^1.1.1"
   }
 }
